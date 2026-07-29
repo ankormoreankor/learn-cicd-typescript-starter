@@ -24,11 +24,6 @@ jobs:
       - name: Build
         run: npm run build
 
-  gcloud:
-    name: "GCloud setup"
-    runs-on: ubuntu-latest
-
-    steps:
       - id: "auth"
         uses: "google-github-actions/auth@v2"
         with:
